@@ -1,354 +1,471 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olanrewaju Akinola | Creative Director</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olanrewaju Akinola | Creative · Technical · Research</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <nav class="nav">
-            <div class="nav-logo">
-                <span class="logo-mark">OA</span>
-                <span class="logo-text">Olanrewaju Akinola</span>
-            </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                ☰
-            </button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Profile</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#work">Selected Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-container">
+      <a href="#home" class="logo hover-text">OA</a>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="hover-text">Home</a></li>
+        <li><a href="#about" class="hover-text">Profile</a></li>
+        <li><a href="#skills" class="hover-text">Skills</a></li>
+        <li><a href="#experience" class="hover-text">Experience</a></li>
+        <li><a href="#work" class="hover-text">Selected Work</a></li>
+        <li><a href="#research" class="hover-text">Research</a></li>
+        <li><a href="#contact" class="hover-text">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Hero / Home -->
-    <main>
-        <section id="home" class="hero-section">
-        <div class="hero-inner">
-            <p class="hero-kicker">
-                Creative Director • Interactive Media Strategist • Video & Motion Lead
-            </p>
-            <h1 class="hero-title">
-                OLANREWAJU <span>AKINOLA</span>
-            </h1>
-            <p class="hero-subtitle">
-                I design and direct immersive visual experiences across video,
-                motion graphics, 3D, and interactive media for brands,
-                media organisations, and global audiences.
-            </p>
+  <!-- HERO -->
+  <header id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle hover-text">
+        Creative Director · Emerging Technologist · AI Governance Researcher
+      </p>
+      <h1 class="hover-text">
+        OLANREWAJU <span>AKINOLA</span>
+      </h1>
+      <p class="hero-text hover-text">
+        I design immersive visual experiences, build interactive systems, and explore
+        how AI, law, and storytelling shape our digital future.
+      </p>
 
-               <div class="hero-meta">
-                <p>📍 Barcelona / Madrid / Zaragoza</p>
-                <p>📞 <a href="tel:+34614479422">+34 614 479 422</a></p>
-                <p>✉️ <a href="mailto:akinola.oluwaseyi22@gmail.com">akinola.oluwaseyi22@gmail.com</a></p>
-            </div>
+      <p class="hero-location hover-text">
+        📍 Tarazona · Barcelona · Madrid · Zaragoza
+      </p>
 
-                <div class="hero-actions">
-                    <!-- TODO: add your real portfolio URL -->
-                    <a href="https://rainbowkreativ.my.canva.site/olanrewwaju-akinola" target="_blank" class="btn primary">
-                        View Portfolio
-                    </a>
+      <div class="hero-contact">
+        <a href="tel:+34614479422" class="hover-text">📞 +34 614 479 422</a>
+        <a href="mailto:akinola.oluwaseyi22@gmail.com" class="hover-text">
+          ✉️ akinola.oluwaseyi22@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/olanrewajuakinola" target="_blank" class="hover-text">
+          🔗 LinkedIn
+        </a>
+      </div>
 
-                    <!-- TODO: ensure this path and file name match your CV PDF -->
-                    <a href="assets/Olanrewaju-Akinola-CV.pdf" class="btn outline" download>
-                        Download CV
-                    </a>
-                </div>
+      <div class="cta-buttons">
+        <!-- CREATIVE LINK -->
+        <a
+          href="https://rainbowkreativ.my.canva.site/olanrewwaju-akinola"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          For Creative Agencies
+        </a>
 
-                <div class="hero-links">
-                    <a href="https://linkedin.com/in/olanrewajuakinola" target="_blank">
-                        LinkedIn
-                    </a>
-                    <span>•</span>
-                    <!-- Optional: link to reel (YouTube, Vimeo, or portfolio reel page) -->
-                    <!-- TODO: add your actual reel link -->
-                    <a href="https://www.instagram.com/p/DJRDfZtCkwH/" target="_blank">
-                        Showreel
-                    </a>
-                </div>
-            </div>
-        </section>
+        <!-- TECHNICAL LINK -->
+        <a
+          href="https://github.com/olanrewajuakinola?tab=repositories"
+          target="_blank"
+          class="btn btn-secondary"
+        >
+          For Technical / Hybrid Roles
+        </a>
 
-        <!-- HERO VIDEO SECTION (below hero text) -->
-    <section class="video-section">
-        <video autoplay muted loop playsinline class="intro-video">
-            <source src="assets/hero-bg_1.mp4" type="video/mp4" />
-        </video>
-    </section>
+        <!-- RESEARCH SECTION LINK -->
+        <a href="#research" class="btn btn-secondary">
+          View AI & Research Work
+        </a>
 
+        <!-- CV DOWNLOAD -->
+        <a href="assets/Olanrewaju-Akinola-CV.pdf" class="btn btn-secondary" download>
+          Download CV
+        </a>
+      </div>
 
-        <!-- About / Profile Summary -->
-        <section id="about" class="section about reveal">
-            <div class="section-heading">
-                <h2>Profile Summary</h2>
-                <p>Who I am and how I work.</p>
-            </div>
-            <div class="about-grid">
-                <div>
-                    <p>
-                        Multidisciplinary Creative Director with 6+ years of experience in video production,
-                        digital storytelling, immersive media, motion graphics, and brand strategy.
-                    </p>
-                    <p>
-                        I lead creative teams, manage complex productions, and deliver high-impact campaigns
-                        for brands, media organisations, and global clients. My work spans commercials,
-                        worship experiences, live events, branded content, and narrative-driven digital media.
-                    </p>
-                    <p>
-                        I’m experienced in 3D/VR workflows, Unreal Engine, and AI-assisted creative pipelines,
-                        with a strong focus on user-centred design, narrative innovation, and culturally
-                        relevant visual experiences.
-                    </p>
-                </div>
-                <div class="about-cards">
-                    <div class="about-card">
-                        <h3>Focus Areas</h3>
-                        <ul>
-                            <li>Creative & Art Direction</li>
-                            <li>Video & Motion Design</li>
-                            <li>Immersive / Interactive Media</li>
-                            <li>Brand & Content Strategy</li>
-                        </ul>
-                    </div>
-                    <div class="about-card">
-                        <h3>Education</h3>
-                        <ul>
-                            <li>PhD (In Progress) – Synthetic Media & Digital Rights</li>
-                            <li>LL.M IT & IP Law – University of Sussex</li>
-                            <li>LL.B Law – Afe Babalola University</li>
-                        </ul>
-                    </div>
-                    <div class="about-card">
-                        <h3>Languages</h3>
-                        <ul>
-                            <li>English – Fluent</li>
-                            <li>Spanish – A2/B1 (Improving)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/p/DJRDfZtCkwH/"
+          target="_blank"
+          class="hover-text"
+        >
+          🎬 Showreel
+        </a>
+        <a
+          href="https://www.rainbowkreativ.com/"
+          target="_blank"
+          class="hover-text"
+        >
+          🌈 Rainbow Kreativ
+        </a>
+      </div>
+    </div>
+  </header>
 
-        <!-- Skills -->
-        <section id="skills" class="section skills reveal">
-            <div class="section-heading">
-                <h2>Core Skills & Tools</h2>
-                <p>What I bring to a creative or production team.</p>
-            </div>
+  <!-- ABOUT -->
+  <section id="about" class="reveal">
+    <h2 class="hover-text">Profile Summary</h2>
+    <p class="section-subtitle hover-text">
+        I am a multidisciplinary Creative Director and Emerging Technologist with a strong foundation 
+        in visual storytelling, interactive media, and AI-aware design. With experience across broadcast, 
+        commercial production, motion graphics, and immersive content creation, I specialise in delivering 
+        emotionally resonant, high-impact visual experiences for brands, media organisations, and digital platforms.
+    </p>
 
-            <div class="skills-columns">
-                <div class="skills-block">
-                    <h3>Core Skills</h3>
-                    <div class="tag-list">
-                        <span class="tag">Creative Direction</span>
-                        <span class="tag">Digital Production</span>
-                        <span class="tag">Motion Graphics</span>
-                        <span class="tag">Video Editing</span>
-                        <span class="tag">Storytelling</span>
-                        <span class="tag">Brand Strategy</span>
-                        <span class="tag">UX/UI (Figma)</span>
-                        <span class="tag">3D / VFX</span>
-                        <span class="tag">Unreal Engine</span>
-                        <span class="tag">Unity (Basic)</span>
-                        <span class="tag">Team Leadership</span>
-                        <span class="tag">Client Management</span>
-                        <span class="tag">Cross-Functional Collaboration</span>
-                    </div>
-                </div>
+    <div class="profile-grid">
+      <div class="profile-content">
+        <p class="hover-text">
+          My work bridges creative direction, technical innovation, and research-driven insight. I design 
+          and lead projects that integrate video, 3D, motion graphics, real-time engines, and interactive 
+          systems—supported by a growing technical background in full-stack development and game-engine workflows. 
+          This intersection of creativity and technology enables me to produce content that is not only visually 
+          compelling, but also scalable, user-centred, and future-ready.
+        </p>
+        <p class="hover-text">
+         In parallel with my creative practice, I am an active AI governance and digital policy researcher, 
+         exploring synthetic media regulation, image rights, algorithmic transparency, and the societal impact 
+         of AI-driven systems. This gives me a unique perspective on responsible innovation, ethical storytelling, 
+         and the emerging regulatory frameworks shaping the future of digital media.
+        </p>
+        <p class="hover-text">
+          I bring a blend of strategic thinking, hands-on production ability, technical fluency, and research insight, 
+          making me well-suited for roles that require creativity, innovation, cross-functional collaboration, and a deep 
+          understanding of the evolving technological landscape.
+        </p>
+      </div>
 
-                <div class="skills-block">
-                    <h3>Tools & Software</h3>
-                    <div class="tag-list">
-                        <span class="tag">Adobe Premiere</span>
-                        <span class="tag">After Effects</span>
-                        <span class="tag">DaVinci Resolve</span>
-                        <span class="tag">Final Cut Pro</span>
-                        <span class="tag">Photoshop</span>
-                        <span class="tag">Illustrator</span>
-                        <span class="tag">Blender</span>
-                        <span class="tag">Cinema 4D (Basic)</span>
-                        <span class="tag">Unreal Engine</span>
-                        <span class="tag">Unity (Basic)</span>
-                        <span class="tag">Figma</span>
-                        <span class="tag">Miro</span>
-                        <span class="tag">Notion</span>
-                        <span class="tag">Asana</span>
-                        <span class="tag">ClickUp</span>
-                    </div>
-                </div>
+      <div class="profile-side">
+        <div class="focus-areas">
+          <h3 class="hover-text">Focus Areas</h3>
+          <ul>
+            <li class="hover-text">Creative & Art Direction</li>
+            <li class="hover-text">Video & Motion Design</li>
+            <li class="hover-text">Immersive / Interactive Media</li>
+            <li class="hover-text">AI, Law & Digital Governance</li>
+          </ul>
+        </div>
 
-                <div class="skills-block">
-                    <h3>Highlights</h3>
-                    <ul class="bulleted">
-                        <li>Increased client retention by <strong>30%</strong> at Rainbow Kreativ.</li>
-                        <li>Featured editor for a BBC Northern Ireland short-form project.</li>
-                        <li>Directed productions viewed by <strong>100,000+</strong> audiences globally.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <div class="education">
+          <h3 class="hover-text">Education</h3>
+          <ul>
+            <li class="hover-text">PhD (In Progress) – AI & Synthetic Media Regulation</li>
+            <li class="hover-text">LL.M – Information Technology & Intellectual Property Law</li>
+            <li class="hover-text">LL.B – Law</li>
+          </ul>
+        </div>
 
-        <!-- Experience -->
-        <section id="experience" class="section experience reveal">
-            <div class="section-heading">
-                <h2>Professional Experience</h2>
-                <p>A snapshot of my recent roles and responsibilities.</p>
-            </div>
+        <div class="languages">
+          <h3 class="hover-text">Languages</h3>
+          <ul>
+            <li class="hover-text">English – Fluent</li>
+            <li class="hover-text">Spanish – A2/B1 (learning)</li>
+            <li class="hover-text">Yoruba – Native</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="timeline">
-                <!-- Rainbow Kreativ -->
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Creative Director & Interactive Media Lead</h3>
-                        <p class="timeline-meta">Rainbow Kreativ – UK / Spain • 2023 – Present</p>
-                        <ul>
-                            <li>Led end-to-end creative strategy for branded campaigns, live events, and digital activations.</li>
-                            <li>Directed immersive productions using Unreal Engine, AI tools, and hybrid storytelling techniques.</li>
-                            <li>Managed cross-functional teams including editors, designers, animators, and photographers.</li>
-                            <li>Delivered 20+ high-impact commercials, promos, worship content, and brand visuals.</li>
-                            <li>Developed workflow systems improving client satisfaction and delivery efficiency.</li>
-                        </ul>
-                    </div>
-                </article>
+  <!-- SKILLS -->
+  <section id="skills" class="reveal">
+    <h2 class="hover-text">Core Skills & Tools</h2>
+    <p class="section-subtitle hover-text">
+      Bridging creative direction, technical workflows, and AI-aware storytelling.
+    </p>
 
-                <!-- BBC NI -->
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Media Technologist / Video Editor</h3>
-                        <p class="timeline-meta">BBC Northern Ireland • 2023</p>
-                        <ul>
-                            <li>Produced broadcast-ready news segments and mini-documentaries.</li>
-                            <li>Designed animated graphics, 3D visualisations, and narrative-driven edits.</li>
-                            <li>Collaborated with journalists to optimise editorial tone and audience engagement.</li>
-                        </ul>
-                    </div>
-                </article>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h3 class="hover-text">Creative & Production</h3>
+        <div class="skill-list">
+          <span class="skill-tag">Creative Direction</span>
+          <span class="skill-tag">Video Editing</span>
+          <span class="skill-tag">Motion Graphics</span>
+          <span class="skill-tag">3D / VFX</span>
+          <span class="skill-tag">Storytelling</span>
+          <span class="skill-tag">Brand Strategy</span>
+          <span class="skill-tag">Live & Worship Visuals</span>
+        </div>
+      </div>
 
-                <!-- Freelance -->
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Freelance Creative / Digital Designer</h3>
-                        <p class="timeline-meta">UK & Nigeria • 2021 – 2023</p>
-                        <ul>
-                            <li>Designed websites and visual products for brands such as Veekee James, Todd Dulaney, StepFWD Awards.</li>
-                            <li>Delivered post-production pipelines, brand kits, and UX prototypes.</li>
-                            <li>Led remote teams and managed international client accounts.</li>
-                        </ul>
-                    </div>
-                </article>
+      <div class="skill-category">
+        <h3 class="hover-text">Technical & Interactive</h3>
+        <div class="skill-list">
+          <span class="skill-tag">Unity (Basic)</span>
+          <span class="skill-tag">Unreal Engine</span>
+          <span class="skill-tag">Foundations of Full-Stack Coding</span>
+          <span class="skill-tag">Interactive Media</span>
+          <span class="skill-tag">VR / 360 Workflows</span>
+          <span class="skill-tag">AI-Assisted Pipelines</span>
+        </div>
+      </div>
 
-                <!-- Lanre Esho Films -->
-                <article class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Video Editor &amp; Project Assistant</h3>
-                        <p class="timeline-meta">Lanre Esho Films • 2020 – 2021</p>
-                        <ul>
-                            <li>Designed cinematic edits and motion graphics for events and advertisements.</li>
-                            <li>Contributed to project planning, client communication, and on-set support.</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
+      <div class="skill-category">
+        <h3 class="hover-text">AI, Law & Governance</h3>
+        <div class="skill-list">
+          <span class="skill-tag">AI Governance</span>
+          <span class="skill-tag">Synthetic Media Regulation</span>
+          <span class="skill-tag">Digital Rights</span>
+          <span class="skill-tag">GDPR & Data Protection</span>
+          <span class="skill-tag">Cybersecurity Law</span>
+          <span class="skill-tag">Comparative AI Regulation</span>
+        </div>
+      </div>
+    </div>
 
-        <!-- Selected Work -->
-        <section id="work" class="section work reveal">
-            <div class="section-heading">
-                <h2>Selected Work</h2>
-                <p>Representative projects across brands, broadcast, and digital experiences.</p>
-            </div>
+    <div class="highlights">
+      <h3>Highlights</h3>
+      <ul>
+        <li>Directed and edited content reaching 100,000+ viewers globally.</li>
+        <li>Creative direction and interactive campaigns for Rainbow Kreativ.</li>
+        <li>Broadcast and motion work as Media Technologist at BBC Northern Ireland.</li>
+      </ul>
+    </div>
+  </section>
 
-            <div class="work-grid">
-                <article class="work-card">
-                    <h3>Rainbow Kreativ Campaigns</h3>
-                    <p>
-                        Creative direction and interactive media leadership for 20+ commercials, worship visuals,
-                        and digital campaigns across UK and Spain.
-                    </p>
-                    <p class="work-meta">Role: Creative Director & Interactive Media Lead</p>
-                    <!-- TODO: add case study / Behance / portfolio link -->
-                    <a href="https://www.instagram.com/p/C-HuJ6ioR-V/" target="_blank">View Case Study</a>
-                </article>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="reveal">
+    <h2 class="hover-text">Professional Experience</h2>
+    <p class="section-subtitle hover-text">
+      Selected roles across creative production, broadcast, and digital innovation.
+    </p>
 
-                <article class="work-card">
-                    <h3>BBC NI Short-form Project</h3>
-                    <p>
-                        Featured editor on a broadcast-ready short-form project, combining news storytelling
-                        with motion graphics and 3D visualisations.
-                    </p>
-                    <p class="work-meta">Role: Media Technologist / Video Editor</p>
-                    <!-- TODO: add reel or edit link -->
-                    <a href="https://www.instagram.com/p/Cx3D6tiC-f6/" target="_blank">View Edit Reel</a>
-                </article>
+    <div class="experience-item">
+      <h3 class="hover-text">Creative Director & Interactive Media Lead</h3>
+      <p class="company hover-text">Rainbow Kreativ · UK / Spain · 2023 – Present</p>
+      <ul>
+        <li class="hover-text">Directed 20+ immersive commercials and interactive campaigns.</li>
+        <li class="hover-text">
+          Led cross-functional teams of editors, 3D artists, and designers to deliver
+          motion-led brand content.
+        </li>
+        <li class="hover-text">
+          Integrated AI tools, game engines, and motion design into creative pipelines.
+        </li>
+      </ul>
+    </div>
 
-                <article class="work-card">
-                    <h3>Veekee James / Todd Dulaney / StepFWD</h3>
-                    <p>
-                        Freelance visual and digital design support for fashion, music, and awards brands –
-                        including web design, brand kits, and post-production.
-                    </p>
-                    <p class="work-meta">Role: Freelance Creative</p>
-                    <!-- TODO: add multi-project portfolio link -->
-                    <a href="https://www.rainbowkreativ.com/" target="_blank">View Client Work</a>
-                </article>
-            </div>
-        </section>
+    <div class="experience-item">
+      <h3 class="hover-text">Media Technologist / Video Editor</h3>
+      <p class="company hover-text">BBC Northern Ireland · 2023</p>
+      <ul>
+        <li class="hover-text">
+          Produced and edited broadcast-ready segments with animated infographics
+          and 3D reconstructions.
+        </li>
+        <li class="hover-text">
+          Collaborated with journalists and directors to shape narrative tone and visual style.
+        </li>
+      </ul>
+    </div>
 
-        <!-- Contact -->
-        <section id="contact" class="section contact reveal">
-            <div class="section-heading">
-                <h2>Let’s Collaborate</h2>
-                <p>For campaigns, productions, or creative partnerships.</p>
-            </div>
+    <div class="experience-item">
+      <h3 class="hover-text">Video Editor & Motion Graphics Artist</h3>
+      <p class="company hover-text">Lanre Esho Films · 2020 – 2021</p>
+      <ul>
+        <li class="hover-text">
+          Crafted emotional story-driven edits for weddings, brands, and advertisements.
+        </li>
+        <li class="hover-text">
+          Designed motion graphics and title sequences to elevate storytelling.
+        </li>
+      </ul>
+    </div>
+  </section>
 
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Direct Contact</h3>
-                    <p>📞 <a href="tel:+34614479422">+34 614 479 422</a></p>
-                    <p>✉️ <a href="mailto:akinola.oluwaseyi22@gmail.com">akinola.oluwaseyi22@gmail.com</a></p>
-                    <p>
-                        🔗 <a href="https://linkedin.com/in/olanrewajuakinola" target="_blank">
-                            linkedin.com/in/olanrewajuakinola
-                        </a>
-                    </p>
-                    <p class="contact-note">
-                        I’m open to collaborations across Europe and remote global projects.
-                    </p>
-                </div>
+  <!-- SELECTED WORK -->
+  <section id="work" class="reveal">
+    <h2 class="hover-text">Selected Work</h2>
+    <p class="section-subtitle hover-text">
+      A snapshot of projects across broadcast, brands, and immersive experiences.
+    </p>
 
-                <form id="contactForm" class="contact-form">
-                    <h3>Send a Message</h3>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" required placeholder="Your name" />
+    <div class="work-grid">
+      <article class="work-item">
+        <div class="work-content">
+          <h3 class="hover-text">Rainbow Kreativ Campaigns</h3>
+          <p class="work-role hover-text">Creative Director & Interactive Media Lead</p>
+          <p class="hover-text">
+            Multi-format campaigns combining live-action, motion graphics, and
+            worship visuals for clients across the UK and Spain.
+          </p>
+          <a
+            href="https://www.instagram.com/p/C-HuJ6ioR-V/"
+            target="_blank"
+            class="work-link hover-text"
+          >
+            View Campaign Snippet
+          </a>
+        </div>
+      </article>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required placeholder="you@example.com" />
+      <article class="work-item">
+        <div class="work-content">
+          <h3 class="hover-text">BBC NI Short-form Visual Story</h3>
+          <p class="work-role hover-text">Media Technologist / Video Editor</p>
+          <p class="hover-text">
+            Broadcast edit integrating motion graphics and 3D visualisations to
+            support editorial storytelling.
+          </p>
+          <a
+            href="https://www.instagram.com/p/Cx3D6tiC-f6/"
+            target="_blank"
+            class="work-link hover-text"
+          >
+            View Edit Excerpt
+          </a>
+        </div>
+      </article>
 
-                    <label for="message">Project / Message</label>
-                    <textarea id="message" rows="5" required placeholder="Tell me a bit about your project..."></textarea>
+      <article class="work-item">
+        <div class="work-content">
+          <h3 class="hover-text">Client Visuals & Brand Work</h3>
+          <p class="work-role hover-text">Freelance Creative</p>
+          <p class="hover-text">
+            Brand-aligned visuals and post-production for names including Veekee James,
+            Todd Dulaney, and StepFWD Awards.
+          </p>
+          <a
+            href="https://www.rainbowkreativ.com/"
+            target="_blank"
+            class="work-link hover-text"
+          >
+            View Client Work
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
 
-                    <button type="submit" class="btn primary">Send Message</button>
-                    <p id="formStatus" class="form-status" aria-live="polite"></p>
-                </form>
-            </div>
-        </section>
-    </main>
+  <!-- RESEARCH -->
+  <section id="research" class="reveal">
+    <h2 class="hover-text">AI Governance & Research</h2>
+    <p class="section-subtitle hover-text">
+      Researching synthetic media, digital rights, and the governance of AI-driven systems.
+    </p>
 
-    <footer class="site-footer">
-        <p>&copy; <span id="year"></span> Olanrewaju Akinola. All rights reserved.</p>
-    </footer>
+    <div class="research-grid">
+      <div class="research-card">
+        <h3 class="hover-text">Doctoral Researcher – AI Law & Synthetic Media</h3>
+        <p class="research-meta hover-text">Selinus University · 2025 – Present</p>
+        <ul>
+          <li class="hover-text">
+            Comparative analysis of synthetic media regulation across the UK, EU, US, Germany, and France.
+          </li>
+          <li class="hover-text">
+            Exploring legal and ethical frameworks for deepfakes, image rights, and AI-generated content.
+          </li>
+          <li class="hover-text">
+            Developing governance models aligned with the EU AI Act, GDPR, and human rights principles.
+          </li>
+        </ul>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="research-card">
+        <h3 class="hover-text">Graduate Researcher – Digital Governance & AI Ethics</h3>
+        <p class="research-meta hover-text">Independent · 2022 – Present</p>
+        <ul>
+          <li class="hover-text">
+            Co-authored peer-reviewed work on AI ethics, algorithmic accountability, and sustainability.
+          </li>
+          <li class="hover-text">
+            Investigated digital twins, IoT governance, and transparency in algorithmic systems.
+          </li>
+          <li class="hover-text">
+            Conducted doctrinal and policy research on AI risk classification and platform regulation.
+          </li>
+        </ul>
+      </div>
+
+      <div class="research-card">
+        <h3 class="hover-text">Selected Publications</h3>
+        <ul>
+          <li class="hover-text">
+            <a href="#" target="_blank">Balancing AI Efficiency & Ethics – IJRESM (2025)</a>
+          </li>
+          <li class="hover-text">
+            <a href="#" target="_blank">AI-Driven Regenerative Agriculture – IOSR (2025)</a>
+          </li>
+          <li class="hover-text">
+            <a href="#" target="_blank">Lessons from the COVID-19 Pandemic –  TMH (2022)</a>
+          </li>
+          <li class="hover-text">
+            <a href="#" target="_blank">Comparative Analysis of AI Regulation (UK/EU/USA) – SSRN</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="reveal">
+    <h2 class="hover-text">Let’s Collaborate</h2>
+    <p class="section-subtitle hover-text">
+      Open to creative, technical, and research-driven collaborations across Europe and remote.
+    </p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3 class="hover-text">Direct Contact</h3>
+        <div class="contact-item">
+          <a href="tel:+34614479422" class="hover-text">📞 +34 614 479 422</a>
+        </div>
+        <div class="contact-item">
+          <a href="mailto:akinola.oluwaseyi22@gmail.com" class="hover-text">
+            ✉️ akinola.oluwaseyi22@gmail.com
+          </a>
+        </div>
+        <div class="contact-item">
+          <a
+            href="https://linkedin.com/in/olanrewajuakinola"
+            target="_blank"
+            class="hover-text"
+          >
+            🔗 linkedin.com/in/olanrewajuakinola
+          </a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <h3 class="hover-text">Send a Message</h3>
+
+        <div class="form-group">
+          <input type="text" id="name" placeholder="Your name" required />
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Tell me a bit about your project..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Send Message</button>
+        </div>
+
+        <p id="formStatus" class="form-status hover-text"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="hover-text">
+      &copy; <span id="year"></span> Olanrewaju Akinola. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
